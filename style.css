@@ -11,6 +11,8 @@
 }
 
 body {
+	font-family: monospace;
+	font-size: 150%;
 	display: grid;
 	grid-template-columns: 1fr 4fr 1fr;
 	color: var(--darcula-fg-col);
@@ -26,7 +28,7 @@ body {
 	box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
 }
 
-#header {font-size: 48px;
+#header {/*font-size: 48px;*/
 	text-align:center;
 	color: var(--darcula-yellow);
 	/* padding-bottom: 1cm; */
@@ -68,7 +70,9 @@ nav > ul > li > a {
 	border-bottom-width: 4px;
 	border-bottom-color: var(--darcula-blue);
 }
-.heading {line-height: 3.0;
+.heading {
+	padding-top: .5em;
+	padding-bottom: .25em;
 	color: var(--darcula-orange);
 	font-weight: bold;
 }

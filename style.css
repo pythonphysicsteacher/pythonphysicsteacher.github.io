@@ -12,11 +12,23 @@
 
 body {
 	font-family: monospace;
-	font-size: 150%;
+	font-size: 120%;
 	display: grid;
-	grid-template-columns: 1fr 4fr 1fr;
+	grid-template-columns: 5% 90& 5%;
 	color: var(--darcula-fg-col);
 	background-color: var(--darcula-bg-light);
+}
+
+@media only screen and (min-width: 600px) {
+	/* tablet screen */
+	body {grid-template-columns: 10% 80% 10%;
+	font-size: 130%;}
+}
+
+@media only screen and (min-width: 768px){
+	/* desktop screen */
+	body {grid-template-columns: 16.67% 66.66% 16.66%;
+	font-size: 150%}
 }
 
 .content {

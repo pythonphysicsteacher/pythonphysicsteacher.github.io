@@ -47,9 +47,10 @@ body {
 }
 
 nav {
-	margin: 5px;
+	margin: 0px;position: fixed;width:100%;
+	margin-left: -20px;;
 	background-color: var(--darcula-bg-light);
-	padding-top: 8px; padding-bottom: 8px;
+	padding-top: 0px; padding-bottom: 0px;
 	border-bottom-style: solid;
 	border-bottom-width: 4px;
 	border-bottom-color:  var(--darcula-bg-light);
@@ -60,24 +61,22 @@ nav > ul {
 	padding: 0;
 }
 nav > ul > li {
-	display: inline;
-	margin:0;padding:0;
-	min-width: 100px;
+	display: inline-block;
+	margin:0;
+	background-color: var(--darcula-bg-light);
 }
 nav > ul > li > a {
 	color: var(--darcula-fg-col);
 	text-decoration: none;
-}
-.menu-item {
-	text-align: center;
 	background-color: var(--darcula-bg-light);
-	margin: 0;
-	padding: 8px;
+	margin:0;
+	padding: 1vw 3vw;
 }
-.menu-item:hover {
+nav > ul > li > a:hover {
 	background-color: var(--darcula-bg-dark);
 }
 .menu-item-selected {
+	padding: 1vw 3vw;
 	border-bottom-style: solid;
 	border-bottom-width: 4px;
 	border-bottom-color: var(--darcula-blue);
